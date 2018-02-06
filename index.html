@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Hangman Game</title>
+<!-- Bootstrap File -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+ <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+</head>
+<body>
+
+
+<!-- Referenc bar back to Student Bio links -->
+	
+        <nav class="navbar navbar-expand-lg navbar-light bg-info" id="color4nav">
+   
+            <a class="navbar-brand" href="https://tann3rjm129.github.io/Bootstrap-Portfolio/" id="tannerHeaderMargin">Tanner McClain</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse"   data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="https://tann3rjm129.github.io/Bootstrap-Portfolio/index.html" id="directoryHeaders">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="https://tann3rjm129.github.io/Bootstrap-Portfolio/portfolio.html" id="directoryHeaders">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="https://tann3rjm129.github.io/Bootstrap-Portfolio/contact.html" id="directoryHeaders" id="contact">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+
+
+<!-- Jumbotron Block/Intro -->
+ 
+<div class="container">
+
+ 		<div class="jumbotron" style="margin-top: 20px; opacity: 0.85;">
+			  <h1 class="display-4" style="font-family: RickAndMorty2; color: #4aaaa5;">Let's play some Hangman BROH!</h1>
+			  <p class="lead" style="font-family: RickAndMorty1; font-size: 22px;">Welcome to Rick and Morty Hangman!</p>
+			  <hr class="my-4">
+			  <p style="font-family: RickAndMorty1; font-size: 22px;">It's simple, all the secret words are related to the Rick and Morty TV show. Test your fandom knowledge! You have 10 wrong guesses before you lose the round! Gain a point for every correct guess. Get at least 8 points to claim Rick and Morty NERD status!</p>
+			</div>
+
+
+<!-- Collapsable Rule Menu -->
+	<div class="row" style="margin-bottom: 20px;">
+	<div class="col-md-8">
+
+			<div id="accordion" style="opacity: 0.85;">
+			  <div class="card">
+			    <div class="card-header" id="headingOne">
+			      <h5 class="mb-0" style="font-family: RickAndMorty2; font-size: 32px; color: #4aaaa5;">
+			          Press any letter to get started Broh!
+			      </h5>
+			    </div>
+
+			    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+			      <div class="card-body" style="font-family: RickAndMorty1; font-size: 22px;">
+			       <h2>Stuff, stuff and more stuff. Guesss some words!</h2>
+			       <h3 style="color: #4aaaa5;">Current Word: </h3><p id="word"></p>
+					<h3 style="color: #4aaaa5;">Score: </h3><p id="score">0</p>
+			       <h3 style="color: #4aaaa5;">Number of Guesses Remaining:</h3><p id="guesses">10</p>
+			       <h3 style="color: #4aaaa5;">Letters Already Guessed:</h3><p id="lettersGuessed">none</p>
+
+			      </div>
+			    </div>
+			  </div>
+			</div>
+	</div>
+	<div class="col-md-4">
+		<div class="card bg-dark text-white">
+			  <img class="card-img" class="img-responsive" src="assets/images/Pickle-Rick.png" alt="Card image">
+			  <div class="card-img-overlay">
+			    <h3 class="card-title" style="color= black; font-family: RickAndMorty1">This isn't hard to understand...</h3>
+			    <p class="card-text"></p>
+			    <p class="card-text"></p>
+			</div>
+		</div>
+	</div>
+  	</div>
+
+</div>
+
+<audio id= "audio1" loop="loop" autoplay="autoplay" onloadeddata="setHalfVolume ()">
+    <source src="assets/javascript/RM-music.mp3" type="audio/mpeg" />
+</audio>
+
+
+<script type="text/javascript" src="assets/javascript/game.js">
+</script>
+
+
+
+</body>
+</html>
