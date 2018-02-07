@@ -1,9 +1,11 @@
-	
+// This worked at first...then didn't
+
 function setHalfVolume() {
     var myAudio = document.getElementById("audio1");  
     myAudio.volume = 0.5;
 }
 
+// global variables
 
 var words = ["squanchy", "unity", "bird person", "pickle rick", "shwifty", "council of ricks", "portal gun", "summer", "morty", "szechuan sauce", "wubalubadubdub", "jerry"];
 var score = 0;
@@ -17,6 +19,7 @@ var randomWord = words[Math.floor(Math.random() * (words.length))];
 
 // Every Letter symbolized with "_"
 var answerArray = [];
+
 
 // Filling in the number of underscores
 function startup() {
@@ -90,7 +93,7 @@ function winCheck(){
 
 document.onkeyup = function(event) {
 
-// guess variable stores key pressed?
+// guess variable stores key pressed
 		var letterGuessed = String(event.key).toLowerCase();
 		updateGuess(letterGuessed);
 		winCheck();
@@ -99,7 +102,25 @@ document.onkeyup = function(event) {
 
 
 
+// // Not sure how to keep playing...throw whole thing in a loop?
 
+				// function game() {
+
+				// for (var i=0; i<randomWord.length; i++) {}
+
+// Make a function that goes next?
+// function nextWord () {
+
+// var randomWord = this.words[Math.floor(Math.random() * this(words.length))];
+
+// document.onkeyup = function(this.event) {
+
+// // guess variable stores key pressed
+// 		var letterGuessed = String(this.event.key).toLowerCase();
+// 		updateGuess(letterGuessed);
+// 		winCheck();
+
+// 	};
 
 
 
