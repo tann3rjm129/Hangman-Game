@@ -35,7 +35,6 @@ document.getElementById("guesses").innerHTML = allowedguesses;
 
 }
 
-startup();
 
 // Player guess
 
@@ -77,11 +76,13 @@ function winCheck(){
 		if (answerArray.indexOf("_") === -1){
 			document.getElementById("score").innerHTML = score + 1;
 			alert("Congratz BROH, you got a point!");
+			startup();
 			}
 // if max number of wrong guesses reached, you lose
 		if (allowedguesses === 0){
 			document.getElementById("word").innerHTML = randomWord;
 			alert("You suck, NO POINTS FOR YOU!!!");
+			startup();
 			}
 // if all the words are guessed then you win!
 		if (score == 8) {
@@ -100,6 +101,7 @@ document.onkeyup = function(event) {
 
 	};
 
+startup();
 
 
 // // Not sure how to keep playing...throw whole thing in a loop?
