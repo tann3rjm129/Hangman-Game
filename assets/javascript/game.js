@@ -37,7 +37,7 @@ document.getElementById("guesses").innerHTML = allowedguesses;
 
 // Player guess
 
-function updateGuess(event) {
+function updateGuess() {
 
 		var letterGuessed = String(event.key).toLowerCase();
 		document.getElementById("guesses").innerHTML = allowedguesses
