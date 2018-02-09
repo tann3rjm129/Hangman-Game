@@ -104,25 +104,6 @@ document.onkeyup = function(event) {
 startup();
 
 
-// // Not sure how to keep playing...throw whole thing in a loop?
-
-				// function game() {
-
-				// for (var i=0; i<randomWord.length; i++) {}
-
-// Make a function that goes next?
-// function nextWord () {
-
-// var randomWord = this.words[Math.floor(Math.random() * this(words.length))];
-
-// document.onkeyup = function(this.event) {
-
-// // guess variable stores key pressed
-// 		var letterGuessed = String(this.event.key).toLowerCase();
-// 		updateGuess(letterGuessed);
-// 		winCheck();
-
-// 	};
 
 
 
