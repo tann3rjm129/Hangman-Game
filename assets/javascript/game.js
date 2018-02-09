@@ -13,17 +13,16 @@ var letterList = [];
 var answer = [];
 var allowedguesses = 10;
 
+
+var answerArray = [];
+
+
 // choose word at random
 var randomWord = words[Math.floor(Math.random() * (words.length))];
 
 
-// Every Letter symbolized with "_"
-var answerArray = [];
-
-
 // Filling in the number of underscores
 function startup() {
-
 
 for (var i=0; i<randomWord.length; i++) {
 		answerArray[i]= "_";
@@ -38,7 +37,7 @@ document.getElementById("guesses").innerHTML = allowedguesses;
 
 // Player guess
 
-function updateGuess() {
+function updateGuess(event) {
 
 		var letterGuessed = String(event.key).toLowerCase();
 		document.getElementById("guesses").innerHTML = allowedguesses
@@ -89,7 +88,6 @@ function winCheck(){
 			alert("You are a master of Rick and Morty, NOW GET A LIFE!")
 			}
 }
-
 
 
 document.onkeyup = function(event) {
